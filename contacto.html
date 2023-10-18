@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO = Básico -->
+    <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta property="og:image" content="URL de la imagen que quieres mostrar en las redes sociales" />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta name="twitter:image" content="URL de la imagen que quieres mostrar en Twitter" />
+
+    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- icono de acceso para IOS -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+    <!-- links de estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+    <!-- Scripts a cargar antes de la renderización -->
+    <script src="preloader.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html">
+            <picture class="main__imagen01">
+                <!-- smartphone -->
+                <source srcset="
+                    img/smartphone/Banner.jpg 1x,
+                    img/smartphone/Banner@2x.jpg  2x,
+                    img/smartphone/Banner@3x.jpg  3x
+                    " media="(min-width:320px) and (orientation:portrait)" />
+
+                <!-- desktop -->
+                <source srcset="
+                            img/desktop/banner.webp    1x,
+                            img/desktop/banner@2x.webp 2x
+                        " media="(min-width:1000px)" />
+                <img src="" alt="nubes altas entre montañas" decoding="async" loading="lazy" />
+            </picture>
+        </a>
+        <nav class="botones">
+            <a href="servicios.html" class="servicios">servicios</a>
+            <a href="" class="contacto">contacto</a>
+        </nav>
+        <main>
+            <form action="">
+                <input type="text" placeholder="nombre">
+                <input type="text" placeholder="apellido">
+                <input type="text" placeholder="explicación">
+                <button>Enviar</button>
+                <p class="texto-form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam quidem
+                    dignissimos voluptatum
+                    voluptatibus minima! Porro nihil odio fugit eius cum voluptatum, recusandae unde ut harum deleniti?
+                    Reiciendis, assumenda aperiam?</p>
+            </form>
+        </main>
+        <footer>
+            <section class="redes">
+                <a href="" class="facebook"><img src="svg/🦆 icon _facebook_.svg" alt=""></a>
+                <a href="" class="instagram"><img src="svg/🦆 icon _instagram_.svg" alt=""></a>
+                <a href="" class="youtube"><img src="svg/🦆 icon _youtube_.svg" alt=""></a>
+            </section>
+        </footer>
+    </div>
+
+</body>
+
+</html>

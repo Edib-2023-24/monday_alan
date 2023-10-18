@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- SEO = Básico -->
-    <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
 
-    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
-    <meta property="og:title" content="Título de tu página" />
-    <meta property="og:description" content="Descripción de tu página" />
-    <meta
-      property="og:image"
-      content="URL de la imagen que quieres mostrar en las redes sociales"
-    />
-    <meta property="og:url" content="URL de tu página" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Título de tu página" />
-    <meta name="twitter:description" content="Descripción de tu página" />
-    <meta
-      name="twitter:image"
-      content="URL de la imagen que quieres mostrar en Twitter"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- SEO = Básico -->
+  <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
 
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+  <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+  <meta property="og:title" content="Título de tu página" />
+  <meta property="og:description" content="Descripción de tu página" />
+  <meta property="og:image" content="URL de la imagen que quieres mostrar en las redes sociales" />
+  <meta property="og:url" content="URL de tu página" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Título de tu página" />
+  <meta name="twitter:description" content="Descripción de tu página" />
+  <meta name="twitter:image" content="URL de la imagen que quieres mostrar en Twitter" />
 
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/style.css" />
-    
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
-    <!-- Código de las plataformas de Análisis -->
-    <script></script>
-    <!-- Scripts a cargar antes de la renderización -->
-    <script src="preloader.js"></script>
-  </head>
-  <body>
-    <div id="container">
-      <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-      <!-- Header (encabezado de la página, zona superior) -->
-      <header>
-        <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
-        </nav>
-      </header>
-      <!-- Main (centro de la página, zona central) -->
-      <main>
-        <!-- section y article (posibilidades dentro de main) -->
-      </main>
-      <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <h6>&copy;Copyright</h6>
-      </footer>
-    </div>
+  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- icono de acceso para IOS -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
-  </body>
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Se cambia el tema de algunos navegadores -->
+  <meta name="theme-color" content="#fafafa" />
+  <!-- Código de las plataformas de Análisis -->
+  <script></script>
+  <!-- Scripts a cargar antes de la renderización -->
+  <script src="preloader.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <picture class="main__imagen01">
+      <!-- smartphone -->
+      <source srcset="
+                    img/smartphone/unsplash_oMpAz-DN-9I.jpg 1x,
+                    img/smartphone/unsplash_oMpAz-DN-9I@2x.jpg  2x,
+                    img/smartphone/unsplash_oMpAz-DN-9I@3x.jpg  3x
+                    " media="(min-width:320px) and (orientation:portrait)" />
+
+      <!-- desktop -->
+      <source srcset="
+                            img/desktop/banner.webp    1x,
+                            img/desktop/banner@2x.webp 2x
+                        " media="(min-width:1000px)" />
+      <img src="" alt="nubes altas entre montañas" decoding="async" loading="lazy" />
+    </picture>
+    <nav class="botones">
+      <a href="servicios.html" class="servicios">servicios</a>
+      <a href="contacto.html" class="contacto">contacto</a>
+    </nav>
+    <picture class="main__imagen02">
+      <!-- smartphone -->
+      <source srcset="
+                    img/smartphone/unsplash_rCbdp8VCYhQ.jpg    1x,
+                    img/smartphone/unsplash_rCbdp8VCYhQ@2x.jpg 2x,
+                    img/smartphone/unsplash_rCbdp8VCYhQ@3x.jpg 3x
+                    " media="(min-width:320px) and (orientation:portrait)" />
+
+      <!-- desktop -->
+      <source srcset="
+                            img/desktop/banner.webp    1x,
+                            img/desktop/banner@2x.webp 2x
+                        " media="(min-width:1000px)" />
+      <img src="" alt="nubes altas entre montañas" decoding="async" loading="lazy" />
+    </picture>
+    <p class="texto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolor laudantium perferendis! Ducimus, eos magnam
+      quidem, exercitationem, dolorum qui dolor beatae soluta sequi commodi odit culpa natus libero ipsa adipisci! Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae cum hic totam quo quos perferendis repellendus
+      quis a nostrum voluptate praesentium temporibus dolore dolores et nemo iusto, ex provident? Lorem ipsum, dolor sit
+      amet consectetur adipisicing elit. Sapiente quibusdam repellat vero accusamus dignissimos, nostrum in incidunt,
+      cupiditate enim dolor ipsa unde? Molestiae dicta veniam numquam ex quasi natus! Assumenda?
+    </p>
+    <footer>
+      <section class="redes">
+        <a href="" class="facebook"><img src="svg/🦆 icon _facebook_.svg" alt=""></a>
+        <a href="" class="instagram"><img src="svg/🦆 icon _instagram_.svg" alt=""></a>
+        <a href="" class="youtube"><img src="svg/🦆 icon _youtube_.svg" alt=""></a>
+      </section>
+    </footer>
+  </div>
+
+</body>
+
 </html>
